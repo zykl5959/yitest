@@ -10,3 +10,6 @@ blocks:
       jobs:
         - name: go test
           commands: []
+promotions:
+  - name: Promotion 1
+    pipeline_file: pipeline_2.yml

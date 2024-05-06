@@ -1,0 +1,16 @@
+version: v1.0
+name: Pipeline 2
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - echo "job 1"
+      env_vars:
+        - name: AWS_ACCESS_KEY_ID
+          value: AKIA6GBMD3GXHK5BOKQ7
