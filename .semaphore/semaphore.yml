@@ -10,6 +10,12 @@ blocks:
       jobs:
         - name: go test
           commands: []
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'cd '
 promotions:
   - name: Promotion 1
     pipeline_file: pipeline_2.yml

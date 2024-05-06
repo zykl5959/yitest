@@ -10,7 +10,8 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - echo "job 1"
+            - go build
+            - cp greeter_client ~/deploy/
       env_vars:
         - name: AWS_ACCESS_KEY_ID
           value: AKIA6GBMD3GXHK5BOKQ7
